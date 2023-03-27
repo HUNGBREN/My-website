@@ -1,0 +1,82 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parent-item {
+    background-color: grey;
+    width: 200px;
+    height: 200px;
+   
+
+}
+.item {
+    background-color: yellowgreen;
+    width: 90%;
+    height: 70%;
+    
+    
+    
+}
+.child {
+    background-color: rgb(205, 50, 107);
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    right: 20px;
+    
+    
+} */
+/* Phần tử có giá trị absolute sẽ nhận phần tử gần nhất có thuộc tính position 
+để đặt các giá trị cho bản thân, ví dụ như độ rộng, chiều cao,... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.schroll { 
+    position: fixed;
+    
+}
+.menu ul{
+    list-style: none;
+    background-color: gray;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+}
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.menu .sub-menu {
+    position: absolute;
+    flex-direction: column;
+    width: 200px;
+    top: 100%;
+    left: 0;
+    background-color: gray;
+
+}
+.menu .sub-menu a {
+    color: yellow;
+}
+.menu .item  {
+    height: 20px;
+    color: white;
+    width: 20%;
+}
+
+.menu ul li:hover .sub-menu {
+    display: flex;
+}

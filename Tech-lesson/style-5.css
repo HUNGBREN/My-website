@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: rgb(101, 153, 170);
+    /* float: both; */
+    height: 42px;
+    
+}
+.logo-1 {
+    width: 30px;
+    float: left;
+    margin-right: 20px;
+}
+.clear-float {
+    clear: both;
+}
+.header-nav {
+    padding: 10px;
+    float: right;
+}
+.header-nav a {
+    padding: 10px;
+}
+
+
+
+
+/* - flex wrap giúp các phần tử có thể xuống dòng 
+- flex-direction có 2 loại là column và row 
++ row là mặc định, các phần tử bên trong sẽ nằm cạnh nhau
++ column các phần tử bên trong sẽ được xếp theo cột (như block)
++ align-items dùng để gióng hàng các phần tử bên trong flex row
+   gióng trên: flex-start
+   gióng giữa: center
+   gióng dưới: flex-end 
++ justify-content: dồn nội dung trong 1 row. Hai giá trị hay dùng nhất là center và space-between */
+
+.flex-1{ 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+.item-2 {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(205, 91, 50);
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.blog-my{ 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid green;
+    width: 50%;
+    border-radius: 30px;
+    margin: 100px;
+}
+.My-Picture{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin-right: 30px;
+    border-radius: 30px;
+}
+h3 {
+    color: gray;
+}
+.button-1 {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: green;    
+}
+.blog-my:hover .button-1 {
+    background-color: red;
+    color: white;
+}

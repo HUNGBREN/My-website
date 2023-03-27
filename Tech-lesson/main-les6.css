@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    background-color: grey;
+}
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: yellow;
+}
+.menu ul li {
+    position: relative;
+
+}
+.menu .sub-menu{
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    
+}
+.menu ul li:hover .sub-menu {
+    display: flex;
+}
+
+.menu {
+    font-size: 10px;
+}
