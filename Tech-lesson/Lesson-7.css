@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 400px;
+        height: 400px;
+    }
+} */
+
+
+/* media query*/
+
+.container {
+    max-width: 2024px;
+    margin: 10px 10px;
+    padding: 10px 15px;
+
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .column-4{
+    flex: 0 0 33.33%;
+    padding: 0 10px;
+} */
+.column-6 {
+    flex: 0 0 50%;
+    padding: 0 10px;
+    margin: 0px;
+}
+.item {
+    background-color: rgb(90, 139, 15);
+    height: 250px;
+}
+@media (min-width: 768px) {
+    .column-md-4 {
+        flex: 0 0 33.33%;
+        padding: 0 10px;
+        
+    }
+}
+
+@media (min-width: 400px) {
+    .column-md-4 {
+        flex: 0 0 1;
+        padding: 0 10px;
+        
+    }
+}
+/* 
+- Điện thoại: smart phones
+- Máy tính bảng: sm
+- Máy tính bảng lớn, lap cỡ nhỏ: md
+- Laptop lớn, desktop cỡ nhỏ: lg
+- Desktop cỡ lớn: xl
+ */

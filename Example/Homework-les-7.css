@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Phần menu-fixed */
+.menu ul{
+    list-style: none;
+    display: flex;
+    background-color: grey;
+}
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: yellow;
+}
+.menu ul li {
+    position: relative;
+
+}
+.menu .sub-menu{
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    
+}
+.menu ul li:hover .sub-menu {
+    display: flex;
+}
+
+.menu {
+    font-size: 10px;
+}
+.sub-menu {
+    height: 100px;
+    width: 100px;
+    overflow-y: scroll;
+}
+
+/* Phần Responsive */
+
+.wrapper{
+    display: flex;
+    margin: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.box{
+    border-radius: 10px;
+    height: 100px;
+    margin: 2px;
+}
+.num-1 {
+    background-color: rgb(201, 135, 205);
+    width: calc((100% - 10px) / 2);
+}
+.num-2 {
+    background-color: rgb(136, 218, 135);
+    width: calc((100% - 20px) / 3);
+}
+.num-3 {
+    background-color: rgb(202, 174, 48);
+    width: calc((100% - 20px) / 4);
+}
+.num-4 {
+    background-color: red;
+    width: calc((100% - 20px) / 4);
+}
+@media (max-width: 500px) {
+    .num-1 {
+        width: 100%;
+    }
+    .num-2 {
+        width: calc((100% - 20px) / 2);
+    }
+    .num-3 {
+        width: calc((100% - 20px) / 2);
+    }
+    .num-4 {
+        width: 100%;
+    }
+}

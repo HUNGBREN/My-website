@@ -31,3 +31,30 @@
 .menu {
     font-size: 10px;
 }
+.sub-menu {
+    height: 200px;
+    width: 100px;
+    /* overflow-y: scroll; */
+}
+/* sub-sub */
+.sub-sub-menu{
+    position: absolute;
+    flex-direction: column;
+    display: none;
+    left: 100%;
+    top: 0
+}
+.sub-menu ul li:hover .sub-sub-menu {
+    display: flex;
+}
+
+.sub-menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: yellow;
+}
+.sub-menu ul li {
+    position: relative;
+
+}
