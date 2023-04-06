@@ -13,6 +13,7 @@
     text-decoration: none;
     padding: 10px;
     color: yellow;
+    /* transition-duration: 0.1s; */
 }
 .menu ul li {
     position: relative;
@@ -24,20 +25,33 @@
     display: none;
     
 }
-.menu ul li:hover .sub-menu {
-    display: flex;
+.menu ul li:hover > .sub-menu {
+    display: block;
 }
 
 .menu {
     font-size: 10px;
 }
 .sub-menu {
-    height: 200px;
+    height: 190px;
     width: 100px;
     /* overflow-y: scroll; */
 }
+
 /* sub-sub */
-.sub-sub-menu{
+.menu .sub-menu .sub-menu{
+    left: 100%;
+    top: 0;
+    height: 60px;
+    /* transition-duration: 0.1s; */
+}
+
+/* + Để tạo menu nhiều cấp, dùng dấu '>' - nó sẽ chọn những thẻ là 
+đúng thẻ con nhận thẻ cha để tác động vào. Ví dụ ở hiệu ứng :hover
+    + áp dụng rất hữu ích ở menu nhiều cấp.
+    + tìm hiểu thêm ở CSS reference selector (trên trang web W3School.com)*/
+
+/* .sub-sub-menu{
     position: absolute;
     flex-direction: column;
     display: none;
@@ -57,4 +71,4 @@
 .sub-menu ul li {
     position: relative;
 
-}
+} */

@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 24px;
+}
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding: 15px 30px;
+}
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(174, 171, 171);
+    padding: 100px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 50px;
+}
+main .container {
+	display: grid;
+	grid-gap: 40px;
+	grid-template: auto / 70% 1fr;
+}
+
+.grid-row {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.grid-3-col {
+	grid-template: auto / repeat(3, 1fr);
+}
+
+.image {
+	padding-top: 100%;
+	background: #d4d4d4 no-repeat center;
+	background-size: cover;
+    border-radius: 10%;
+    position: relative;
+}
+
+/* aspect ratio */
+
+
+.item h3{
+    text-align: center;
+    padding-top: 10px;
+}
+.button {
+    position: absolute;
+    transform: translate(165px, -40px);
+    transition-duration: 0.3s;
+    border: 2px solid rgb(188, 182, 182);
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.buy:hover {
+    background-color: green; 
+    color: white;
+}
+.cease:hover {
+    background-color: red; 
+    color: white;
+}
+.form{
+    display: grid;
+    grid-template-rows: 40px;
+    padding: 10px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.form textarea{
+    padding: 10px;
+    resize: vertical; 
+}
+/*  dùng resize: vertical;  để cố định chiều rộng của đoạn textarea */
+input[type=submit] {
+    border-radius: 20px;
+    background-color: rgb(192, 184, 184);
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+input[type=submit]:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;;
+}
+label{
+    font-weight: bold;
+}
+
+/*  sửa lề sao cho thẻ header bằng với thẻ main
+    kiểm tra padding của Xôi với ảnh
+    thêm 1 số hiệu ứng cho đẹp  
+    sử dụng Responsive*/

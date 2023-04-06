@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Buổi 4</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		.parents {
+			width: 400px;
+			height: 400px;
+			background: cyan;
+			/*
+			position: relative;
+			*/
+		}
+		
+		.child {
+			background: lightcoral;
+			position: absolute;
+			width: 50%;
+			height: 50%;
+			top: 20%;
+			right: 15px;
+			bottom: ;
+			left: ;
+		}
+		
+		.nephew {
+			position: absolute;
+			width: 20%;
+			height: 20%;
+			background: lightblue;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		/*
+		phần tử có giá trị absolute sẽ nhận phần tử gần nhất có thuộc tính position để đặt các giá trị cho bản thân, ví dụ như độ rộng, chiều cao, vị trí
+		*/
+		
+		.scroll-to-top {
+			position: fixed;
+			right: 25px;
+			bottom: 100px;
+			border-radius: 4px;
+			border: 0;
+			width: 40px;
+			height: 40px;
+			background: #ccc;
+		}
+		/*
+		phần tử có giá trị fixed sẽ nhận viewport (body) để thay đổi giá trị của bản thân
+		*/
+		
+		.main-menu ul {
+			list-style: none;
+			display: flex;
+			background: #333;
+		}
+		
+		.main-menu ul li {
+			position: relative;
+		}
+		
+		.main-menu ul li:hover .sub-menu {
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		.main-menu ul li a {
+			display: block;
+			text-decoration: none;
+			padding: 18px 22px;
+			color: #fff;
+			transition: 0.2s;
+		}
+		
+		.main-menu .sub-menu {
+			position: absolute;
+			flex-direction: column;
+			width: 200px;
+			top: 100%;
+			left: 0;
+			background: #f4f4f4;
+			/*
+			opacity: 0;
+			visibility: hidden;
+			*/
+			box-shadow: 0 8px 10px 1px rgba(0, 0, 0, .15);
+			transition: 0.2s;
+			/*box-shadow: bóng theo chiều ngang - bóng theo chiều dọc - độ mờ - độ lan tỏa - màu*/
+			
+		}
+		
+		.main-menu .sub-menu a {
+			color: #333;
+		}
+		
+		header {
+			position: sticky;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+			
+			/*
+			z-index sử dụng để sắp xếp thứ tự theo bề nôi của các phần tử sử dụng position 
+			*/
+		}
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<main>
+		<header>
+			<nav class="main-menu">
+				<ul>
+					<li>
+						<a href="#">About</a>
+					</li>
+					<li>
+						<a href="#">Catgories <i class="fa-solid fa-caret-down"></i></a>
+						<ul class="sub-menu">
+							<li><a href="#">Catgories 1</a></li>
+							<li><a href="#">Catgories 2</a></li>
+							<li><a href="#">Catgories 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="parents">
+			<div class="child">
+				<div class="nephew"></div>
+			</div>
+		</div>
+		<div class="parents">
+		</div>
+		<div class="parents">
+		</div>
+		<div class="parents">
+		</div>
+		<div class="parents">
+		</div>
+		<div class="parents">
+		</div>
+		<div class="parents">
+		</div>
+		
+		<button class="scroll-to-top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</button>
+	</main>
+</body>
+</html>
