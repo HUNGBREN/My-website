@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			line-height: 1.5;
+			font-family: monospace;
+			outline: 0;
+		}
+		
+		main {
+			padding: 5%;
+		}
+		
+		.container {
+			max-width: 667px;
+			margin: 0 auto;
+			padding: 0 15px;
+			display: block;
+		}
+		
+		.btn {
+			display: inline-block;
+			padding: 8px 12px;
+			text-align: center;
+			cursor: pointer;
+			border-radius: 6px;
+			border: 0;
+			background: #4E29E3;
+			color: #fff;
+		}
+		
+		.input {
+			display: block;
+			padding: 8px 12px;
+			border-radius: 6px;
+			border: 1px solid #ccc;
+			background: #fff;
+			width: 100%;
+		}
+		
+		.form {
+			display: grid;
+			grid-template: auto / 1fr 120px;
+			grid-gap: 14px;
+			align-items: self-end;
+			padding: 18px;
+			margin: 0 0 28px;
+			background: #fff;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+			border-radius: 12px;
+		}
+		
+		.label {
+			display: block;
+			margin-bottom: 4px;
+		}
+		
+		li {
+			padding: 18px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, .1);
+			border-radius: 8px;
+			list-style: none;
+			margin-bottom: 8px;
+			display: flex;
+			align-items: center;
+		}
+		
+		li h4 {
+			margin-right: auto;
+		}
+		
+		li button {
+			flex: 0 0 36px;
+			margin-right: 8px;
+		}
+		
+		.btn.success {
+			background: #28a745;
+			color: #fff;
+		}
+		
+		.btn.danger {
+			background: #dc3545;
+			color: #fff;
+		}
+		
+		.done {
+			text-decoration: line-through;
+		}
+		
+		.default {
+			color: #999;
+			background: #eee;
+			border-radius: 8px;
+			padding: 18px;
+		}
+		
+		.justify-content-center {
+			justify-content: center;
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="form">
+				<div class="form-group">
+					<b class="label">Add new task</b>
+					<input class="input" type="text" placeholder="Task name">
+				</div>
+				<button class="btn"><i class="fa fa-plus" aria-hidden="true"></i> Create new</button>
+			</div>
+			
+			<ul class="list">
+				<li class="default justify-content-center"><b>You don't have any task :"></b></li>
+			</ul>
+		</div>
+	</main>
+	
+	
+	<script src="main.js"></script>
+</body>
+</html>

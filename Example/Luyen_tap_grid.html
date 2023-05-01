@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainning</title>
+    <link rel="stylesheet" href="Luyen-tap.css">
+    <style>
+        main .content{
+            text-align: center;
+        }
+        th, td{
+            padding: 5px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <header>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">LOGIN</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="menu">MENU</div>
+            <div class="content">
+                <table border="1">
+                    <caption style="caption-side: top;">ĐƠN HÀNG</caption>
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Mặt hàng</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Mặt hàng A</td>
+                        <td>1000</td>
+                        <td>1</td>
+                        <td>1000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mặt hàng B</td>
+                        <td>10000</td>
+                        <td>2</td>
+                        <td>20000</td>
+                        <td></td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Thành tiền đơn hàng</td>
+                            <td>21000</td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <br>
+                <button onclick="myButton()">Đặt hàng</button>
+                <h2 id="demo"></h2>
+            </div>
+        </main>
+        <footer>FOOTER</footer>
+    </div>
+    
+
+    <script>
+        // document.getElementById("demo").addEventListener('click', myButton);
+        function myButton() {
+            document.getElementById("demo").innerHTML = alert('Đã đặt hàng thành công');
+        }
+        
+    </script> -->
+    <h1>Shopping Cart</h1>
+	<div id="product-list">
+		<div class="product">
+			<h2>Product 1</h2>
+			<p>Price: $10</p>
+			<button class="add-to-cart" data-price="10">Add to Cart</button>
+		</div>
+		<div class="product">
+			<h2>Product 2</h2>
+			<p>Price: $20</p>
+			<button class="add-to-cart" data-price="20">Add to Cart</button>
+		</div>
+        <div class="product">
+			<h2>Product 3</h2>
+			<p>Price: $30</p>
+			<button class="add-to-cart" data-price="30">Add to Cart</button>
+		</div>
+        <div class="product">
+			<h2>Product 4</h2>
+			<p>Price: $40</p>
+			<button class="add-to-cart" data-price="40">Add to Cart</button>
+		</div>
+	</div>
+	<div id="cart">
+		<h2>Cart</h2>
+		<p>Total: $0</p>
+		<button id="checkout">Checkout</button>
+	</div>
+    <div class="customize-size">
+        <div class="customize-title">Size:</div>
+        <div>
+            <ul class="customize-wrap-size">
+                <li class="content-size">
+                    <a href="javascript:void()" data-id="" data-price="0">S
+                    </a>
+                </li>
+                <li class="content-size">
+                    <a href="javascript:void()" data-id="" data-price="5">M
+                    </a>
+                </li>
+                <li class="content-size">
+                    <a href="javascript:void()" data-id="" data-price="10">L
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+	<script src="script.js"></script>
+</body>
+</html>

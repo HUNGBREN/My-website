@@ -1,0 +1,83 @@
+:root{
+    --main-color: rgb(96, 96, 228);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 50px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: var(--main-color);
+}
+
+tr:nth-child(even) {
+    background-color: rgb(208, 208, 241);
+}
+
+
+/* Model */
+
+.modal {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, .15);
+}
+
+.modal-dialog {
+	background: #fff;
+	margin: 28px auto;
+	max-width: 500px;
+	position: relative;
+	z-index: 1;
+}
+
+.modal-content {
+	width: 100%;
+	padding: 16px;
+}
+.modal-body h3 {
+    padding: 10px;
+}
+.modal-body input{
+    margin: 10px;
+    display: block;
+    margin: 0 50px;
+}
+.modal-body{
+    position: relative;
+}
+.btn{
+    position: absolute;
+    right: 0;
+}
+

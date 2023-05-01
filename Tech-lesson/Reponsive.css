@@ -1,3 +1,24 @@
 @media (min-width: 768px) {
+
 }
-/* xong import vào html để nhìn cho gọn */
+
+@media (min-width: 1200px) {
+	#nav-trigger {
+		display: none;
+	}
+	
+	header nav {
+		display: block;
+		position: static;
+		width: auto;
+		box-shadow: none;
+	}
+	
+	header nav ul {
+		flex-direction: row;
+	}
+	
+	header nav ul li:hover .sub-menu {
+		display: block;
+	}
+}

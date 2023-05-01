@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="BT-less16.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <input type="text" placeholder="Nhập tên học viên">
+                <button>Thêm học viên</button>
+            </div> <br> 
+            <h2>Danh sách học viên</h2>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Họ và Tên</th>
+                        <th>Số điện thoại</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Phạm Doanh Ngân</td>
+                        <td>0987591281</td>
+                        <td>phamdoanhngan0410@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Nguyễn Đỗ Đăng Khoa</td>
+                        <td>0987654321</td>
+                        <td>tranthib@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Đào Tăng Tuấn</td>
+                        <td>0987654321</td>
+                        <td>tranthib@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Đào Tăng Phương</td>
+                        <td>0987654321</td>
+                        <td>tranthib@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Nguyễn Việt Hoàng</td>
+                        <td>0987654321</td>
+                        <td>tranthib@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Đỗ Văn Đà</td>
+                        <td>0987654321</td>
+                        <td>tranthib@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Nguyễn Đức Duy</td>
+                        <td>0974804426</td>
+                        <td>ducduy26092002@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal">
+            <div class="overlay"></div>
+            <!-- Cái dialog sẽ quyết định độ rộng của modal -->
+            <div class="modal-dialog">
+                <div class="model-content">
+                    <div class="modal-header"></div>
+                    <div class="modal-body">
+                        <h3>Họ và tên</h3>
+                        <input name="name" type="text" placeholder="Họ tên">
+                        <h3>Số điện thoại</h3>
+						<input name="phone_number" type="text" placeholder="SĐT">
+                        <h3>Email</h3>
+						<input name="email" type="text" placeholder="Email">
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn">Lưu</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="Less16.js"></script>
+</body>
+</html>

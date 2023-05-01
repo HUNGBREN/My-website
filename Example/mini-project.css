@@ -1,5 +1,5 @@
 :root {
-    --maincolor: orangered;
+    --maincolor: #ED6436;
     --subcolor: rgb(30, 168, 30);
 }
 
@@ -85,6 +85,7 @@ ul li a{
     padding: 8px 10px;
     border-radius: 6px;
     cursor: pointer;
+    border: 1px solid rgba(0,0,0, 0);
 }
 .nu-1  {
     background-color: var(--maincolor);
@@ -95,7 +96,7 @@ ul li a{
 }
 
 ul li .active,
-ul li:hover a{
+.header-bottom ul li:hover a{
     color: black;
     background-color: var(--maincolor);
 }
@@ -103,7 +104,7 @@ ul li:hover a{
 lưu ý khi làm menu thì nên là thẻ nav và bọc trong ul li a */
 
 
-/* Section 1 */
+/* Section 1 - Hero*/
 
 .bg-section{
     background-image: url(./src/images/hero.jpg);
@@ -112,28 +113,35 @@ lưu ý khi làm menu thì nên là thẻ nav và bọc trong ul li a */
     text-align: center;
     color: white;
 }
-.bg-section h3{
+.bg-section h2{
     padding: 180px 0 20px;
     font-size: 24px;
-}
+} 
+
 h1{
-    font-size: 60px;
+    font-size: 50px;
     padding-bottom: 25px;
     font-weight: 800;
 }
 
 /* Section 2 */
 
+h3{
+    color: var(--subcolor);
+    padding-bottom: 20px;
+    font-size: 20px;
+} 
+
 .bg-section p{
     font-size: 16px;
     padding-bottom: 25px;
 } 
 .booking-section-bg {  
-    background-color: rgba(211, 211, 211, 0.747);
+    background-color: rgba(234, 234, 234, 0.977);
 }
 .booking-container {
     display: grid;
-    grid-template: auto / 5fr 7fr;
+    grid-template: auto / 5fr 7fr; 
     margin: 0 150px;    
     /* justify-content: center; */
     /* align-items: center; */
@@ -163,14 +171,11 @@ select{
 .booking-content{
     padding: 30px 0 30px 30px;
 }
-.booking-content h3{
-    color: var(--subcolor);
-    padding-bottom: 20px;
-    
-} 
+
 span {
     color: var(--maincolor);
 }
+
 .booking-wrapper {
     display: grid;
     grid-template: auto / 1fr 1fr;
@@ -188,7 +193,7 @@ span {
     padding-right: 10px;
 }
 .booking-wrapper li{
-    padding: 10px 0 20px;
+    padding: 10px 0 10px;
 }
 
 /* Section 3 */
@@ -220,11 +225,7 @@ img{
 .booking-content-2{
     padding-right: 30px;
 }
-.booking-content-2 h3{
-    color: var(--subcolor);
-    padding-bottom: 20px;
-    
-}
+
 .booking-content-2 i{
     color: var(--subcolor);
     
@@ -235,4 +236,229 @@ img{
 }
 .booking-section-2 {
     margin: 50px 150px;
+}
+
+/* Section 4: Pet Services */
+
+.services-wrapper{
+    margin: 0 150px;
+}
+.services-option{
+    display: grid;
+    grid-template:  auto / repeat(3, 1fr) ;
+    grid-gap: 20px;
+    text-align: center;
+}
+.services-detail{
+    background-color: whitesmoke;
+    width: 270px;
+    padding: 40px 20px 20px;
+} 
+.services-detail img{
+    width: 60px;
+    height: 100%;
+    padding-bottom: 20px;
+}   
+.services-detail a{
+    color: var(--maincolor);
+} 
+.services-detail a:hover{
+    text-decoration: underline;
+} 
+.services-detail p{
+    padding-top: 10px;
+}
+.section-4 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+/* Section 5: Pet Book-5 */
+
+.book-sec-5 {
+    display: grid;
+    grid-template: auto / 5fr 7fr; 
+    margin: 0 150px;
+}
+.sec-5-title{
+    padding: 50px 0 30px 40px;
+}
+
+.book-sec-5 .booking-title{
+    padding-top: 20px;
+}
+
+
+/* Section 6: Price-section */
+
+.price-sec-6 {
+    padding: 50px 0;
+}
+.price-info {
+    margin: 0 150px;
+    text-align: center;
+}
+.price-details{
+    display: grid;
+    grid-template: auto / repeat(3, 1fr);
+    grid-gap: 30px;
+}
+.price-details img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+.price-options{
+    background-color: white;
+    text-align: center;
+}
+.price-options p{
+    padding: 8px 0;
+}
+.button-price {
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 15px 0;
+    margin-top: 15px;
+}
+.price-options i{
+    color: var(--subcolor);
+    padding-right: 3px;
+}
+.price-options .red-check{
+    color: #C0392B;
+    padding-right: 3px;
+}
+hr {
+    color: #a11616;
+}
+
+.ngan-cach{
+    border: 1px solid #e5e5e5;
+    width: 100%;
+}
+
+/* Section 7: Team-member */
+
+.team-member-section{
+    margin: 0 150px;
+    text-align: center;
+    padding: 50px 0;
+}
+.team-members{
+    display: grid;
+    grid-template: auto / repeat(4, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* padding: 0; */
+}
+
+/* setup chiều cao mặc định cho 2 thẻ để transition */
+.member-info,
+.social-netwok{
+    height: 70px;
+} 
+
+.member-info{
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(235, 229, 229);
+}
+.member-info h4{
+    padding-bottom: 5px;
+
+}
+.social-netwok{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 15px;
+    grid-gap: 10px;
+}
+.social-netwok .icon{
+    display: inline-block;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+.social-netwok a{
+    /* padding: 10px; */
+    color: var(--maincolor);
+    border-radius: 50%;
+    border: 1px solid var(--maincolor);
+    width:35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.member-card:hover .member-wrapper{
+    transform: translateY(-70px);
+
+}
+.member-wrapper{
+    transition: all 0.4s;
+}
+.wrapper-card{
+    overflow: hidden;
+    height: 70px;
+}
+.member-card img{
+    display: block;
+}
+
+.member-card{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+/* Footer */
+
+.footer-bg{
+    /* text-align: center; */
+    padding: 50px 0;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+.title-footer{
+    margin-left: 150px;
+    width: 280px;
+}
+.title-footer h2{
+    padding-bottom: 20px ;
+}
+.adress-footer h4{
+    color: var(--maincolor);
+    padding-bottom: 10px;
+}
+.adress-footer{
+    padding: 0 80px;
+}
+.adress-footer i{
+    padding: 8px;
+}
+.adress-footer h5{
+    padding-top: 10px;
+}
+
+.info-footer ul li a{
+    padding: 1px;
+}
+.info-footer i{
+    padding: 8px;
 }

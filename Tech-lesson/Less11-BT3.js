@@ -24,4 +24,4 @@ function valid(str) {
 
     return true;
 }
-console.log(valid("([])"));
+console.log(valid("([] {})"));

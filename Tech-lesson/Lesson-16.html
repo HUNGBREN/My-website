@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basic</title>
+</head>
+<body>
+    <script>
+        /*  
+        .map() 
+        .filter() //clone ra 1 mảng mới(shallow)
+        
+        */
+        let arr_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        // let arr_2 = arr_1.map(function(item, index){
+        //     let value = 0;
+        //     if (item % 2 ==0) {
+        //         if (typeof item == 'undefined') {
+
+        //         }
+        //     }
+        //     else {
+        //         item == 'undefined' 
+        //     }
+            
+        // });
+        // console.log(arr_2)
+        function check(number) {
+            if (number % 2 ==0){
+                return number;
+            }
+        }
+        let arr_2 = arr_1.filter(check);
+        console.log(arr_2);
+
+
+
+        //Ex2:
+        let fruits = ['apple', 'lemon', 'banana', 'orange', 'lime'];
+
+        // function search(name) {
+        //     let filtered = fruits.filter(fruit => fruit.includes(name));
+        //     return filtered;
+        // }
+        // console.log(search('a'));
+
+        function search(arr, keyword) {
+            return arr.filter(function(item) {
+                return item.includes(keyword);
+            })
+        }
+        console.log(search(fruits, 'e'));
+
+
+    </script>
+
+    <!-- <script src="Less16.js"></script> -->
+</body>
+</html>

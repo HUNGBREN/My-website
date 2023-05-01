@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <header>
+        <header class="menu-bars">
             <nav class="menu">
                 <ul>
                     <li>
@@ -22,13 +22,13 @@
                     <li>
                         <a href="#"> Lịch thi đấu <i class="fa-solid fa-caret-down"></i></a> 
                         <ul class="sub-menu"> 
-                            <li><a href="#"> Premier League </a>
+                            <li><a href="#"> Premier League <i class="fa-solid fa-caret-down"></i></a>
                                 <ul class="sub-menu"> 
                                     <li><a href="#"> FA cup </a></li>
                                     <li><a href="#"> Carabal cup</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"> Laliga</a>
+                            <li><a href="#"> Laliga <i class="fa-solid fa-caret-down"></i></a>
                                 <ul class="sub-menu"> 
                                     <li><a href="#"> Cúp nhà vua </a></li>
                                     <li><a href="#"> Siêu cúp</a></li>
@@ -43,7 +43,15 @@
                     <li> <a href="#"> Chuyển nhượng </a></li>
                 </ul>
             </nav>
+
+            <div class="button-group">
+                <button class="btn">Sign in</button>
+                <button class="btn btn-primary">Sign up</button>
+                <button id="nav-trigger" class="btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
         </header>
     </main>
+
+    <script src="hidden-button.js"></script>
 </body>
 </html>

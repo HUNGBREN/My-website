@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .container{
+    display: grid;
+    grid-template-rows: 100px 300px 100px;
+    grid-template-columns: repeat(12, 1fr); 
+}
+header{
+    background-color: gray;
+    grid-column: span 12;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+header ul a{
+    text-decoration: none;
+}
+
+main {
+    background-color: rgb(227, 182, 99);
+    grid-column: span 12;
+    display: grid;
+    grid-template: auto / 2fr 10fr;
+}
+.menu {
+    background-color: rgb(99, 227, 152);
+}
+.content {
+    background-color: rgb(132, 146, 234);
+}
+footer {
+    background-color: plum;
+    grid-column: span 12;
+} */
+
+/* Phần lựa chọn Size */
+
+.content-size a{
+    border: 1px solid #c3c3c3;
+    padding: 8px;
+    
+}
+.customize-size,
+.customize-size ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}

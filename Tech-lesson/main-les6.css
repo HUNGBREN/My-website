@@ -1,7 +1,16 @@
+:root {
+    --maincolor: yellow;
+    --subcolor: rgb(30, 168, 30);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header nav{
+    background-color: grey;
 }
 .menu ul{
     list-style: none;
@@ -12,7 +21,8 @@
     display: block;
     text-decoration: none;
     padding: 10px;
-    color: yellow;
+    color: var(--maincolor);
+    font-size: 20px;
     /* transition-duration: 0.1s; */
 }
 .menu ul li {
@@ -33,8 +43,8 @@
     font-size: 10px;
 }
 .sub-menu {
-    height: 190px;
-    width: 100px;
+    height: auto;
+    width: 180px;
     /* overflow-y: scroll; */
 }
 
@@ -42,7 +52,7 @@
 .menu .sub-menu .sub-menu{
     left: 100%;
     top: 0;
-    height: 60px;
+    height: auto;
     /* transition-duration: 0.1s; */
 }
 
@@ -66,9 +76,71 @@
     display: block;
     text-decoration: none;
     padding: 10px;
-    color: yellow;
+    color: var(--maincolor);
 }
 .sub-menu ul li {
     position: relative;
 
 } */
+
+
+.menu-bars{
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+.menu-bars i{
+    color: var(--maincolor);
+    
+}
+
+#nav-trigger{
+    display: none;
+}
+
+/* Style button */
+.btn {
+    padding: 3px 8px;
+    background: transparent; /* màu trong suốt */
+    border: 0;
+    cursor: pointer;
+    text-align: center;   /* nếu button bọc trong thẻ a */
+    display: inline-block; /*  thì phải thêm 2 dòng này */
+    color: var(--maincolor);
+    border-radius: 4px;
+    font-size: 20px;
+}
+.btn-primary{
+    background-color: var(--maincolor);
+    color: grey;
+}
+
+@media (max-width: 687px) {
+    #nav-trigger{
+    display: inline-block;
+}
+    
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul li{
+        position: static;
+    }
+    .menu ul li a{
+        padding: 10px;
+    }
+    .menu ul ul{
+        position: static;
+    }
+    header nav{
+        position: fixed;
+        background: grey;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        box-shadow: 4px 0 10px 1px rgba(0, 0, 0, 0.25);
+    }
+}
