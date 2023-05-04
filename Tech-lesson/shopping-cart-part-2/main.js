@@ -13,25 +13,35 @@ function convertMoney(num) {
 // Danh sách sản phẩm
 let products = [
     {
-        id: randomId(),
+        id: 1,
         name: 'Áo kiểu nữ cam đất phối cổ trắng dập ly',
         description:
             'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, velit.',
-        price: 250000,
+        price: 50000,
         image:
-            'https://image.yes24.vn/Upload/ProductImage/anhduong201605/1947415_L.jpg?width=550&height=550',
+            '/Shopping cart/src/images/product-1 (tranchauduongden).jpg',
         count: 1,
     },
     {
-        id: randomId(),
+        id: 2,
         name: 'Áo trắng bèo lé đen tay loe dễ thương',
         description:
             'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, velit.',
         price: 350000,
         image:
-            'https://image.yes24.vn/Upload/ProductImage/anhduong201605/1914666_L.jpg?width=550&height=550',
+            '/Shopping cart/src/images/product-4-Tra-man-hat-sen.png',
         count: 1,
     },
+    // {
+    //     id: randomId(),
+    //     name: 'Áo trắng bèo lé đen tay loe dễ thương',
+    //     description:
+    //         'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, velit.',
+    //     price: 350000,
+    //     image:
+    //         '/Shopping cart/src/images/product-5 Tra-Xanh-Kem-Pho-Mai.jpg',
+    //     count: 1,
+    // },
 ];
 
 // Danh sách promotion code (Mã giảm giá)
@@ -66,14 +76,14 @@ function renderUI(arr) {
     // Cập nhật tổng tiền
     updateTotalMoney(arr);
 
-    if (arr.length == 0) {
-        productsEle.insertAdjacentHTML(
-            'afterbegin',
-            '<li>Không có sản phẩm nào trong giỏ hàng</li>'
-        );
-        document.querySelector('.option-container').style.display = 'none';
-        return;
-    }
+    // if (arr.length == 0) {
+    //     productsEle.insertAdjacentHTML(
+    //         'afterbegin',
+    //         '<li>Không có sản phẩm nào trong giỏ hàng</li>'
+    //     );
+    //     document.querySelector('.option-container').style.display = 'none';
+    //     return;
+    // }
 
     for (let i = 0; i < arr.length; i++) {
         const p = arr[i];

@@ -9,6 +9,25 @@ const totalMoney = document.querySelector('.total-price span');
 // Gán cho table  
 let table_body = document.querySelector('table tbody')
 
+// Data products
+
+// let data = [
+//     {
+//         id: 1,
+//         name: 'Trà sữa chân trâu đường đen',
+//         price: 55000,
+//         image:
+//             '/Shopping cart/src/images/product-1 (tranchauduongden).jpg',
+//     },
+//     {
+//         id: 2,
+//         name: 'Trà mận hạt sen',
+//         price: 65000,
+//         image:
+//             '/Shopping cart/src/images/product-4-Tra-man-hat-sen.png',
+//     },
+// ];
+
 
 // Gọi các button và index của nó ra
 // hàm forEach trả về các dữ liệu và index của phần tử đó
