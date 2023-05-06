@@ -209,3 +209,18 @@ input {
     text-align: center;
     padding: 10px 0;
 }
+
+
+
+/* aspect ratio */
+.image {
+	padding-top: 100%;
+	background: var(--color-premium) no-repeat center;
+	background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+}
